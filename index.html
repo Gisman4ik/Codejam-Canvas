@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js"></script>
+    <title>Canvas</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="nav-icon">
+          <div class="nav-icon__line"></div>
+          <div class="nav-icon__line"></div>
+          <div class="nav-icon__line"></div>
+        </div>
+      </nav>
+      <h1 class="header-title">CodeJam - Pallete</h1>
+      <section class="header-menu">
+        <div class="header-menu__dot"></div>
+        <div class="header-menu__dot"></div>
+        <div class="header-menu__dot"></div>
+      </section>
+    </header>
+    <main class="main">
+      <section class="tools">
+        <article class="tools__container">
+          <div class="tools__container_tool">
+            <img class="tools__container_tool-img" src="./assets/images/Paint-Bucket.svg" alt="">
+            <span class="tools__container_tool-text">Paint Bucket</span>
+          </div>
+          <div class="tools__container_tool">
+            <img class="tools__container_tool-img" src="./assets/images/Choose-color.svg" alt="">
+            <span class="tools__container_tool-text">Choose color</span>
+          </div>
+          <div class="tools__container_tool">
+            <img class="tools__container_tool-img" src="./assets/images/Move.svg" alt="">
+            <span class="tools__container_tool-text">Move</span>
+          </div>
+          <div class="tools__container_tool">
+            <img class="tools__container_tool-img" src="./assets/images/Trasform.svg" alt="">
+            <span class="tools__container_tool-text">Transform</span>
+          </div>
+        </article>
+        <article class="tools__container">
+          <div class="tools__container_tool">
+            <div class="tools__container_tool-circle circle-gray"></div>
+            <span class="tools__container_tool-text">Current color</span>
+          </div>
+          <div class="tools__container_tool">
+            <div class="tools__container_tool-circle circle-green"></div>
+            <span class="tools__container_tool-text">Previous color</span>
+          </div>
+          <div class="tools__container_tool">
+            <div class="tools__container_tool-circle circle-red"></div>
+            <span class="tools__container_tool-text">Red</span>
+          </div>
+          <div class="tools__container_tool">
+            <div class="tools__container_tool-circle circle-blue"></div>
+            <span class="tools__container_tool-text">Blue</span>
+          </div>
+        </article>
+      </section>
+      <canvas id="canvas" class="canvas" width="512" height="512"></canvas>
+      <section class="size-switcher">
+        <div class="size-switcher__container">
+          <div class="size-switcher__container_radio-block">
+            <input id="size-4x4" class="size-switcher__radio" type="radio" name="size-switcher">
+            <label class="size-switcher__radio-label" for="size-4x4" >4x4</label>
+          </div>
+          <div class="size-switcher__container_radio-block">
+            <input id="size-32x32" class="size-switcher__radio" type="radio" name="size-switcher">
+            <label class="size-switcher__radio-label" for="size-32x32" >32x32</label>
+          </div>
+          <div class="size-switcher__container_radio-block">
+            <input id="size-img" class="size-switcher__radio" type="radio" name="size-switcher">
+            <label class="size-switcher__radio-label" for="size-img" >IMAGE</label>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
